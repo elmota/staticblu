@@ -1,0 +1,2 @@
+# staticblu
+static site

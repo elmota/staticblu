@@ -13,11 +13,11 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 
   <script type="text/javascript" charset="UTF-8" src="./assets/common.js"></script>
-  
+
   <script type="text/javascript" charset="UTF-8" src="./assets/util.js"></script>
-  
+
   <script type="text/javascript" charset="UTF-8" src="./assets/map.js"></script>
-  
+
   <style type="text/css">
     .gm-style {
       font: 400 11px Roboto, Arial, sans-serif;
@@ -29,57 +29,56 @@
     }
   </style>
   <script type="text/javascript" charset="UTF-8" src="./assets/onion.js"></script>
-  
+
 </head>
 
 <body>
   <app-root _nghost-fxl-c0="" ng-version="8.0.1">
-    <nav _ngcontent-fxl-c0="" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"><a _ngcontent-fxl-c0=""
-        class="navbar-brand"><img _ngcontent-fxl-c0="" alt="Bluexpress" class="logo"
-          src="./assets/logo_blue.png"></a><button _ngcontent-fxl-c0="" aria-controls="my-nav"
-          
-        aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#my-nav"
-        data-toggle="collapse"><span _ngcontent-fxl-c0="" class="navbar-toggler-icon"></span></button>
-      <div _ngcontent-fxl-c0="" class="collapse navbar-collapse justify-content-between" id="my-nav">
-        <ul _ngcontent-fxl-c0="" class="navbar-nav justify-content-end nav">
-          <li _ngcontent-fxl-c0=""></li>
+    <nav  class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"><a 
+        class="navbar-brand"><img  alt="Bluexpress" class="logo"
+          src="./assets/logo_blue.png"></a><button  aria-controls="my-nav" aria-expanded="false"
+        aria-label="Toggle navigation" class="navbar-toggler" data-target="#my-nav" data-toggle="collapse"><span
+           class="navbar-toggler-icon"></span></button>
+      <div  class="collapse navbar-collapse justify-content-between" id="my-nav">
+        <ul  class="navbar-nav justify-content-end nav">
+          <li ></li>
         </ul>
-        <ul _ngcontent-fxl-c0="" class="navbar-nav justify-content-end nav">
-          <li _ngcontent-fxl-c0="" class="nav-item"><a _ngcontent-fxl-c0="" class="nav-link">Seguimiento</a></li>
-          <li _ngcontent-fxl-c0="" class="nav-item"><a _ngcontent-fxl-c0="" class="nav-link">Sucursales <span
-                _ngcontent-fxl-c0="" class="sr-only">(current)</span></a></li>
-          <li _ngcontent-fxl-c0="" class="nav-item"><a _ngcontent-fxl-c0="" class="nav-link">Servicios</a></li>
-          <li _ngcontent-fxl-c0="" class="nav-item"><a _ngcontent-fxl-c0="" class="nav-link">Informacion Cliente</a>
+        <ul  class="navbar-nav justify-content-end nav">
+          <li  class="nav-item"><a  class="nav-link" href="#" data-section="#seguimiento">Seguimiento</a></li>
+          <li  class="nav-item"><a  class="nav-link" href="#" data-section="#sucursales">Sucursales <span
+                 class="sr-only">(current)</span></a></li>
+          <li  class="nav-item"><a  class="nav-link" href="#" data-section="#servicios">Servicios</a></li>
+          <li  class="nav-item"><a  class="nav-link" href="#" data-section="#info">Informacion Cliente</a>
           </li>
-          <li _ngcontent-fxl-c0="" class="nav-item"><a _ngcontent-fxl-c0="" class="nav-link">Nosotros</a></li>
-          <li _ngcontent-fxl-c0="" class="nav-item"><a _ngcontent-fxl-c0="" class="nav-link">Contactenos</a></li>
+          <li  class="nav-item"><a  class="nav-link" href="#" data-section="#nosotros">Nosotros</a></li>
+          <li  class="nav-item"><a  class="nav-link" href="#" data-section="#contacto">Contactenos</a></li>
         </ul>
       </div>
     </nav>
-    <router-outlet _ngcontent-fxl-c0=""></router-outlet>
-    <app-home _nghost-fxl-c1="" class="ng-star-inserted">
-      <app-seguimiento _ngcontent-fxl-c1="" _nghost-fxl-c2="">
-        <div _ngcontent-fxl-c2="" class="container-fluid main" id="seguimiento">
-          <div _ngcontent-fxl-c2="" class="slides">
-            <div _ngcontent-fxl-c2="" class="slide"></div>
+    <router-outlet ></router-outlet>
+    <app-home class="ng-star-inserted">
+      <app-seguimiento>
+        <div class="container-fluid main" id="seguimiento">
+          <div class="slides">
+            <div class="slide"></div>
           </div>
         </div>
       </app-seguimiento>
-      <div _ngcontent-fxl-c1="" class="wrapper">
-        <app-sucursales _ngcontent-fxl-c1="" _nghost-fxl-c3="">
-          <div _ngcontent-fxl-c3="" class="container main" id="sucursales">
-            <div _ngcontent-fxl-c3="" class="row">
-              <div _ngcontent-fxl-c3="" class="col-md-12">
-                <div _ngcontent-fxl-c3=""
+      <div class="wrapper">
+        <app-sucursales _nghost-fxl-c3="">
+          <div class="container main" id="sucursales">
+            <div class="row">
+              <div class="col-md-12">
+                <div
                   class="center gap fade-down section-heading no-display animated fadeInDown appear">
-                  <h2 _ngcontent-fxl-c3="" class="main-title">Sucursales</h2>
+                  <h2 class="main-title">Sucursales</h2>
                 </div>
               </div>
             </div>
-            <div _ngcontent-fxl-c3="" class="row">
-              <div _ngcontent-fxl-c3="" class="col-md-3">
-                <div _ngcontent-fxl-c3="" class="form-group">
-                  <p-autocomplete _ngcontent-fxl-c3="" placeholder="Ciudad"
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <p-autocomplete placeholder="Ciudad"
                     class="ng-tns-c8-0 ng-untouched ng-pristine ng-valid" ng-reflect-min-length="1"
                     ng-reflect-placeholder="Ciudad" ng-reflect-dropdown="true" ng-reflect-suggestions=""><span
                       class="ng-tns-c8-0 ui-autocomplete ui-widget ui-autocomplete-dd"
@@ -102,8 +101,8 @@
   "ng-reflect-ng-if": "false"
 }--></span></p-autocomplete>
                 </div>
-                <div _ngcontent-fxl-c3="" class="form-group">
-                  <p-autocomplete _ngcontent-fxl-c3="" placeholder="Comuna"
+                <div class="form-group">
+                  <p-autocomplete placeholder="Comuna"
                     class="ng-tns-c8-1 ng-untouched ng-pristine ng-valid" ng-reflect-min-length="1"
                     ng-reflect-placeholder="Comuna" ng-reflect-dropdown="true" ng-reflect-suggestions=""><span
                       class="ng-tns-c8-1 ui-autocomplete ui-widget ui-autocomplete-dd"
@@ -127,13 +126,13 @@
 }--></span></p-autocomplete>
                 </div>
               </div>
-              <div _ngcontent-fxl-c3="" class="col-md-9">
-                <div _ngcontent-fxl-c3="" class="row">
-                  <div _ngcontent-fxl-c3="" class="col">
+              <div class="col-md-9">
+                <div class="row">
+                  <div class="col">
                     <!--bindings={
   "ng-reflect-ng-if": "true"
 }-->
-                    <h1 _ngcontent-fxl-c3="" class="placeholder ng-star-inserted"><em _ngcontent-fxl-c3=""> Seleccione
+                    <h1 class="placeholder ng-star-inserted"><em> Seleccione
                         una susucral... </em></h1>
                     <!--bindings={
   "ng-reflect-ng-if": "false"
@@ -143,19 +142,18 @@
               </div>
             </div>
           </div>
-          <p-dialog _ngcontent-fxl-c3="" class="ng-tns-c9-2" ng-reflect-visible="false" ng-reflect-header=""
+          <p-dialog class="ng-tns-c9-2" ng-reflect-visible="false" ng-reflect-header=""
             ng-reflect-modal="true" ng-reflect-responsive="true" ng-reflect-style="[object Object]">
             <!--bindings={
   "ng-reflect-ng-if": "false"
 }-->
           </p-dialog>
         </app-sucursales>
-        <app-servicios _ngcontent-fxl-c1="" _nghost-fxl-c4="">
+        <app-servicios _nghost-fxl-c4="">
           <div class="container main" id="servicios">
             <div class="row">
               <div class="col-md-12">
-                <div
-                  class="center gap fade-down section-heading no-display animated fadeInDown appear">
+                <div class="center gap fade-down section-heading no-display animated fadeInDown appear">
                   <h2 class="main-title">Servicios</h2>
                   <hr>
                   <p>Otorgamos un servicio puerta a puerta para distribuir tus productos, ya sean
@@ -165,76 +163,75 @@
             </div>
             <div class="row">
               <div class="col-md-3">
-                <div class="tile-progress tile
+                <a href="servicios/envios.html" class="servicios-box">
+                  <div class="tile-progress tile
                 -red bounce-in no-display animated bounceIn appear">
-                  <div class="tile-header" style="display: block; height: 417px;">
-                    <h4><a>Envíos Nacionales</a></h4><img
-                      src="./assets/article"><span
-                      
-                      style="text-align: justify;">Transporte y envíos de sobres, valijas y encomiendas a más de 300
-                      ciudades en Chile, con Seguimiento en Línea.</span>
+                    <div class="tile-header" style="display: block; height: 417px;">
+                      <h4><a>Envíos Nacionales</a></h4><img src="./assets/article"><span
+                        style="text-align: justify;">Transporte y envíos de sobres, valijas y encomiendas a más de 300
+                        ciudades en Chile, con Seguimiento en Línea.</span>
+                    </div>
+                    <div class="tile-progressbar">
+                      <span data-fill="300" style="width: 65.5%;"></span></div>
+                    <div class="tile-footer">
+                      <h4><span class="pct-counter counter">300</span></h4>
+                    </div>
                   </div>
-                  <div class="tile-progressbar">
-                    <span data-fill="300"
-                      style="width: 65.5%;"></span></div>
-                  <div class="tile-footer">
-                    <h4><span class="pct-counter counter">300</span></h4>
-                  </div>
-                </div>
+                </a>
               </div>
               <div class="col-md-3">
-                <div class="tile-progress tile
+                <a href="servicios/oficinas.html" class="servicios-box">
+                  <div class="tile-progress tile
                 -cyan bounce-in no-display animated bounceIn appear">
-                  <div class="tile-header" style="display: block; height: 417px;">
-                    <h4><a>Oficinas Comerciales</a></h4><img
-                     src="./assets/article(1)"><span>Transporte de
-                        
-                      envíos a través de nuestras sucursales en todo Chile.</span>
+                    <div class="tile-header" style="display: block; height: 417px;">
+                      <h4><a>Oficinas Comerciales</a></h4><img src="./assets/article(1)"><span>Transporte de
+
+                        envíos a través de nuestras sucursales en todo Chile.</span>
+                    </div>
+
+                    <div class="tile-progressbar">
+                      <span data-fill="24" style="width: 98.5%;"></span></div>
+                    <div class="tile-footer">
+                      <h4><span class="pct-counter counter">24</span></h4>
+                    </div>
                   </div>
-                  <div class="tile-progressbar">
-                    <span data-fill="24"
-                      style="width: 98.5%;"></span></div>
-                  <div class="tile-footer">
-                    <h4><span class="pct-counter counter">24</span></h4>
-                  </div>
-                </div>
+                </a>
               </div>
               <div class="col-md-3" id="courier">
-                <div
-                  class="tile-progress tile-primary bounce-in no-display animated bounceIn appear">
-                  <div class="tile-header" style="display: block; height: 417px;">
-                    <h4><a>Courier Internacional</a></h4><img
-                     src="./assets/article(2)"><span>Nuestra red de
-                        
-                      distribución internacional contempla el transporte de sobres y paquetes con cobertura a 220
-                      países.</span>
+                <a href="servicios/courier.html" class="servicios-box">
+                  <div class="tile-progress tile-primary bounce-in no-display animated bounceIn appear">
+                    <div class="tile-header" style="display: block; height: 417px;">
+                      <h4><a>Courier Internacional</a></h4><img src="./assets/article(2)"><span>Nuestra red de
+
+                        distribución internacional contempla el transporte de sobres y paquetes con cobertura a 220
+                        países.</span>
+                    </div>
+                    <div class="tile-progressbar"><span data-fill="220" style="width: 10%;"></span></div>
+                    <div class="tile-footer">
+                      <h4><span class="pct-counter counter">220</span></h4>
+                    </div>
                   </div>
-                  <div class="tile-progressbar"><span data-fill="220"
-                      style="width: 10%;"></span></div>
-                  <div class="tile-footer">
-                    <h4><span class="pct-counter counter">220</span></h4>
-                  </div>
-                </div>
+                </a>
               </div>
               <div class="col-md-3">
-                <div class="tile-progress tile-pink bounce-in no-display animated bounceIn appear">
-                  <div class="tile-header" style="display: block; height: 417px;">
-                    <h4><a>Almacenaje y Lógistica</a></h4><img
-                     src="./assets/article(3)"><span>Servicio de
-                        
-                      administración de inventario, mecanizado y distribución.</span>
+                <a href="servicios/almacenaje.html" class="servicios-box">
+                  <div class="tile-progress tile-pink bounce-in no-display animated bounceIn appear">
+                    <div class="tile-header" style="display: block; height: 417px;">
+                      <h4><a>Almacenaje y Lógistica</a></h4><img src="./assets/article(3)"><span>Servicio de
+
+                        administración de inventario, mecanizado y distribución.</span>
+                    </div>
+                    <div class="tile-progressbar"><span data-fill="10%" style="width: 10%;"></span></div>
+                    <div class="tile-footer">
+                      <h4><span class="pct-counter counter">10</span></h4>
+                    </div>
                   </div>
-                  <div class="tile-progressbar"><span data-fill="10%"
-                      style="width: 10%;"></span></div>
-                  <div class="tile-footer">
-                    <h4><span class="pct-counter counter">10</span></h4>
-                  </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
         </app-servicios>
-        <app-info _ngcontent-fxl-c1="" _nghost-fxl-c5="">
+        <app-info _nghost-fxl-c5="">
           <div _ngcontent-fxl-c5="" class="container main" id="info">
             <div _ngcontent-fxl-c5="" class="row">
               <div _ngcontent-fxl-c5="" class="col-md-12">
@@ -277,7 +274,7 @@
             <div _ngcontent-fxl-c5="" class="row"></div>
           </div>
         </app-info>
-        <app-nosotros _ngcontent-fxl-c1="" _nghost-fxl-c6="">
+        <app-nosotros _nghost-fxl-c6="">
           <div _ngcontent-fxl-c6="" class="container main" id="nosotros">
             <div _ngcontent-fxl-c6="" class="row">
               <div _ngcontent-fxl-c6="" class="col-md-12">
@@ -315,7 +312,6 @@
                         href="http://localhost:4200/nosotros/valores"
                         ng-reflect-router-link="/nosotros/valores">Valores</a></h4><img _ngcontent-fxl-c6=""
                       height="100px;" src="./assets/article"><span _ngcontent-fxl-c6=""
-                      
                       style="text-align: justify;">Calidad, Confiabilidad, Integridad...</span>
                   </div>
                 </div>
@@ -326,7 +322,6 @@
                         href="http://localhost:4200/nosotros/tecnologia"
                         ng-reflect-router-link="/nosotros/tecnologia">Nuestra Tecnología</a></h4><img
                       _ngcontent-fxl-c6="" height="100px;" src="./assets/article"><span _ngcontent-fxl-c6=""
-                      
                       style="text-align: justify;">Nuestra tecnología está en constante...</span>
                   </div>
                 </div>
@@ -339,7 +334,6 @@
                         href="http://localhost:4200/nosotros/integracion"
                         ng-reflect-router-link="/nosotros/integracion">Integración Web Services</a></h4><img
                       _ngcontent-fxl-c6="" height="100px;" src="./assets/article"><span _ngcontent-fxl-c6=""
-                      
                       style="text-align: justify;">Blue Express tiene disponible para...</span>
                   </div>
                 </div>
@@ -350,7 +344,6 @@
                         href="http://localhost:4200/nosotros/politica"
                         ng-reflect-router-link="/nosotros/politica">Política Integrada</a></h4><img _ngcontent-fxl-c6=""
                       height="100px;" src="./assets/article"><span _ngcontent-fxl-c6=""
-                      
                       style="text-align: justify;">Empresa Blue Express, es una empres...</span>
                   </div>
                 </div>
@@ -358,7 +351,7 @@
             </div>
           </div>
         </app-nosotros>
-        <app-contacto _ngcontent-fxl-c1="" _nghost-fxl-c7="">
+        <app-contacto _nghost-fxl-c7="">
           <div _ngcontent-fxl-c7="" class="container-fluid main" id="contacto">
             <div _ngcontent-fxl-c7="" class="row">
               <div _ngcontent-fxl-c7="" class="col-md-12">
@@ -497,6 +490,7 @@
   <script type="text/javascript" async="" defer="" id="agmGoogleMapsApiScript" src="./assets/js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="./assets/javascript/bootstrap.js"></script>
+  <script type="text/javascript" src="./assets/javascript/scripts.js"></script>
 
   <div style="position: absolute; left: 0px; top: -2px; height: 1px; overflow: hidden; visibility: hidden; width: 1px;">
     <span

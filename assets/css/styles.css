@@ -23552,3 +23552,8 @@
     .wrapper {
         margin-top: 140px;
     }
+
+    .servicios-box {
+        display:block;
+        height: auto;
+    }

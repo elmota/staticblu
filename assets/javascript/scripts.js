@@ -11,3 +11,18 @@ $('.nav-link').click(function () {
     return false;
 })
 
+$('#form-nav a').click(function () {
+    var form = 'contacto/' + $(this).attr('data-form') + '.html';
+
+    console.log(form);
+
+    $('#forms').load(form);
+
+    return false;
+});
+
+$('.eje').click(function () {
+    console.log('D;');
+
+    return false;
+});

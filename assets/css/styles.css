@@ -23557,3 +23557,17 @@
         display:block;
         height: auto;
     }
+
+    #seguimiento {
+        min-height: 100vh;
+    }
+    @media screen and (min-width: 600px) {
+    #main-slider .carousel, 
+    #main-slider .carousel-inner, 
+    #main-slider .carousel-inner .item, 
+    #main-slider .carousel-inner .item .container, 
+    #main-slider .carousel-inner .item .row, 
+    #main-slider .carousel-inner .item .row .col-sm-12 {
+height: 100vh;
+}
+    }

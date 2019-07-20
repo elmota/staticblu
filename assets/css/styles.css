@@ -23571,3 +23571,9 @@
 height: 100vh;
 }
     }
+    .form .error {
+color:red;
+    }
+    .form .form-control.error {
+        border: 1px solid red;
+    }

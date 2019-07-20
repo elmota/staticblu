@@ -21,8 +21,10 @@ $('#form-nav a').click(function () {
     return false;
 });
 
-$('.eje').click(function () {
+$('#ejecutivoForm button[type=submit]').click(function () {
     console.log('D;');
 
-    return false;
+    // return false;
 });
+
+$("#ejecutivoForm").validate();

@@ -135,8 +135,33 @@
                     </button>
 
                     <button type="button" class="btn btn-primary" onclick="loadSucursales()">
-                        sucursales AJAX
-                      </button>
+                      sucursales AJAX
+                    </button>
+
+                    <div id="sucursalesList">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Ciudad</th>
+                            <th>Sucursal</th>
+                            <th>Direccion</th>
+                            <th>Telefono</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td rowspan="4">
+                              {{sucursal?.location.state_name}}</td>
+                            <td>{{sucursal?.agency_name}}</td>
+                            <td>{{sucursal?.location.street_name}} {{sucursal?.location.street_number}}</td>
+                            <td>+56 9832 2343</td>
+                            <td class="text-center"><i onclick="loadMap(index)" class="fa fa-marker button"></i> eo
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
 
                   </div>
                 </div>
@@ -218,7 +243,8 @@
                 <a href="servicios/almacenaje.html" class="servicios-box">
                   <div class="tile-progress tile-pink bounce-in no-display animated bounceIn appear">
                     <div class="tile-header" style="display: block; height: 417px;">
-                      <h4><a>Almacenaje y Lógistica</a></h4><img src="./assets/article(3)"><span>Servicio de administración de inventario, mecanizado y distribución.</span>
+                      <h4><a>Almacenaje y Lógistica</a></h4><img src="./assets/article(3)"><span>Servicio de
+                        administración de inventario, mecanizado y distribución.</span>
                     </div>
                     <div class="tile-progressbar"><span data-fill="10%" style="width: 10%;"></span></div>
                     <div class="tile-footer">

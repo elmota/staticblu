@@ -65,7 +65,14 @@ $('.navigate').click(function () {
 
 function loadSucursales() {
     $.ajax({
-        url: "http://localhost:3000/posts"
+        url: "http://localhost:3000/ciudades",
+        // url: "http://192.168.101.10:8080/sucursales",
+        type: 'GET',
+        // type: 'POST',
+        // data: $.param({
+        //     "pais":"CL",
+        //     "comuna":"Antofagasta"
+        //   }),
     }).then(function (data) {
         console.log('DATA', data);
     });

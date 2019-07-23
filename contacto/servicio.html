@@ -1,5 +1,208 @@
+<div class="container" id="info">
+     <div class="journal-content-article" id="article_10154_160123_161013_1.0">
+          <form id="servicioForm" method="post">
+               <div class="well conta clearfix">
+                    <h3>Inquietudes por Servicio </h3>
+                    <span class="txtCamposObligatorios">(*) Campos Obligatorios</span>
+                    <hr>
+                    <div class="col-md-9 col-md-offset-1">
+                         <div class="form">
+                              <div class="row">
 
-            <div class="container" id="info">
-       no content 
-            </div>
-    
+                                   <div class="col-md-12">
+                                        <legend>Datos del Solicitante</legend>
+                                   </div><!-- /.col-md-12 -->
+
+                                   <div class="col-md-6">
+                                        <div class="form-group">
+                                             <label for="rutCliente">Rut Cliente</label>
+                                             <input type="text" class="form-control" placeholder="Rut Cliente"
+                                                  name="rutCliente" id="rutCliente">
+                                        </div><!-- /.form-group -->
+                                   </div><!-- /.col-md-6 -->
+
+                                   <div class="col-md-6">
+                                        <div class="form-group">
+                                             <label for="ctaCliente">Cuenta Corriente (*)</label>
+                                             <input type="text" class="form-control" placeholder="Cuenta Corriente"
+                                                  name="ctaCliente" id="ctaCliente">
+                                             <span id="msgCtaCliente" class="msgValidacion"> </span>
+                                        </div><!-- /.form-group -->
+                                   </div><!-- /.col-md-6 -->
+
+                                   <div class="col-md-12">
+                                        <div class="form-group">
+                                             <label for="">Razón Social</label>
+                                             <input type="text" class="form-control" placeholder="Razón Social"
+                                                  name="razonSocial" id="razonSocial">
+                                        </div><!-- /.form-group -->
+                                   </div><!-- /.col-md-6 -->
+
+                                   <div class="col-md-12">
+                                        <legend>Datos del que Reclama</legend>
+                                   </div><!-- /.col-md-12 -->
+
+                                   <div class="col-md-6">
+                                        <div class="form-group">
+                                             <label for="msgNombre">Nombre (*)</label>
+                                             <input type="text" class="form-control" placeholder="Nombre"
+                                                  name="nombreCliente" id="nombreCliente">
+                                             <span id="msgNombre" class="msgValidacion"> </span>
+                                        </div><!-- /.form-group -->
+                                   </div><!-- /.col-md-12 -->
+
+                                   <div class="col-md-6">
+                                        <div class="form-group">
+                                             <label for="">Apellido (*)</label>
+                                             <input type="text" class="form-control" placeholder="Apellido"
+                                                  name="apellidoCliente" id="apellidoCliente">
+                                             <span id="msgApellido" class="msgValidacion"> </span>
+                                        </div><!-- /.form-group -->
+                                   </div><!-- /.col-md-12 -->
+
+                                   <div class="col-md-6">
+                                        <div class="form-group">
+                                             <label for="">Teléfono (*)</label>
+                                             <input type="text" class="form-control" placeholder="Ingrese su Teléfono"
+                                                  name="telefonoCliente" id="telefonoCliente">
+                                             <span id="msgFono" class="msgValidacion"> </span>
+                                        </div><!-- /.form-group -->
+                                   </div><!-- /.col-md-6 -->
+
+                                   <div class="col-md-6">
+                                        <div class="form-group">
+                                             <label for="">Correo Electrónico (*)</label>
+                                             <input type="text" class="form-control"
+                                                  placeholder="Ingrese su Correo Electrónico" name="emailCliente"
+                                                  id="emailCliente">
+                                             <span id="msgEmail" class="msgValidacion"> </span>
+                                        </div><!-- /.form-group -->
+                                   </div><!-- /.col-md-6 -->
+
+
+
+                                   <div class="col-md-12">
+                                        <legend>Reclamo por Servicio</legend>
+                                   </div><!-- /.col-md-12 -->
+                                   <div class="col-md-12">
+                                        <div class="form-group">
+                                             <label for="">Tipo de Reclamo</label>
+                                             <select name="tipoReclamoServicio" id="tipoReclamoServicio"
+                                                  class="form-control">
+                                                  <option value="servicio">Incumplimiento de Servicio</option>
+                                                  <option value="dano">Daño</option>
+                                                  <option value="extravio">Extravio</option>
+                                                  <option value="faltante">Faltante</option>
+                                             </select>
+                                        </div><!-- /.form-group -->
+                                   </div><!-- /.col-md-12 -->
+                                   <div class="col-md-12">
+                                        <div class="form-group">
+                                             <label for="">Tipo de Documento</label>
+                                             <select name="tipoDocumento" id="tipoDocumento" class="form-control">
+
+                                                  <option value="OS">Orden de Servicio</option>
+                                                  <option value="REF">Documento de Referencia</option>
+                                                  <option value="SKY">SKY</option>
+                                                  <!-- <option value="BOL">Boleta</option>
+                                                             <option value="FAC">Factura</option> -->
+
+                                             </select>
+                                        </div><!-- /.form-group -->
+                                   </div><!-- /.col-md-12 -->
+
+                                   <div class="col-md-6">
+                                        <div class="form-group">
+                                             <label for="">Número de documento</label>
+                                             <input type="text" class="form-control"
+                                                  placeholder="Ingrese Numero de Documento" name="numeroDocumento"
+                                                  id="numeroDocumento">
+                                        </div><!-- /.form-group -->
+                                   </div><!-- /.col-md-6 -->
+                                   <div class="col-md-6">
+                                        <div class="form-group">
+                                             <label for="">Fecha de envio</label>
+                                             <input type="text" class="form-control"
+                                                  placeholder="Ingrese Fecha de Envío" name="fechaEnvio"
+                                                  id="fechaEnvio">
+                                        </div><!-- /.form-group -->
+                                   </div><!-- /.col-md-6 -->
+
+                                   <div class="col-md-6">
+                                        <div class="form-group">
+                                             <label for="">Lugar de origen</label>
+                                             <input type="text" class="form-control"
+                                                  placeholder="Ingrese Lugar de Origen" name="lugarOrigen"
+                                                  id="lugarOrigen">
+                                        </div><!-- /.form-group -->
+                                   </div><!-- /.col-md-6 -->
+
+                                   <div class="col-md-6">
+                                        <div class="form-group">
+                                             <label for="">Lugar de destino</label>
+                                             <input type="text" class="form-control"
+                                                  placeholder="Ingrese Lugar de Origen" name="lugarDestino"
+                                                  id="lugarDestino">
+                                        </div><!-- /.form-group -->
+                                   </div><!-- /.col-md-6 -->
+
+                                   <div class="col-md-12">
+                                        <legend>Reclamo por Atención</legend>
+                                   </div><!-- /.col-md-12 -->
+
+                                   <div class="col-md-12">
+                                        <div class="form-group">
+                                             <label for="">Tipo de Reclamo</label>
+                                             <select name="tipoReclamoAtencion" id="tipoReclamoAtencion"
+                                                  class="form-control">
+                                                  <option value="atencion1">Atención Ejecutivo Telefonico</option>
+                                                  <option value="atencion2">Atención Ejecutivo</option>
+                                             </select>
+                                        </div><!-- /.form-group -->
+                                   </div><!-- /.col-md-12 -->
+
+                                   <div class="col-md-6">
+                                        <div class="form-group">
+                                             <label for="">Nombre del Ejecutivo</label>
+                                             <input type="text" class="form-control" placeholder=""
+                                                  name="nombreEjecutivo" id="nombreEjecutivo">
+                                        </div><!-- /.form-control -->
+                                   </div><!-- /.col-md-6 -->
+                                   <div class="col-md-6">
+                                        <div class="form-group">
+                                             <label for="">Día de Atención</label>
+                                             <input type="text" class="form-control small date-pick fLeft"
+                                                  placeholder="poner calendario acá" name="diaAtencion"
+                                                  id="diaAtencion">
+
+                                        </div><!-- /.form-control -->
+                                   </div><!-- /.col-md-6 -->
+
+                                   <div class="col-md-12">
+                                        <div class="form-group">
+                                             <label for="observaciones">Observaciones (*)</label>
+                                             <textarea cols="30" rows="4" class="form-control" name="observaciones"
+                                                  id="observaciones"></textarea>
+                                             <span id="msgObservaciones" class="msgValidacion"> </span>
+                                        </div><!-- /.form-group -->
+                                   </div><!-- /.col-md-12 -->
+
+                                   <div class="col-md-12">
+                                        <div class="form-group">
+                                             <a class="btn btn-block btn-primary btn-lg" onclick="enviarForm()">Enviar
+                                                  Solicitud</a>
+                                        </div><!-- /.form-group -->
+                                   </div><!-- /.col-md-12 -->
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <input type="hidden" value="41" name="tipoInquietud" id="tipoInquietud">
+               <input type="hidden" name="detalle" id="detalle">
+          </form>
+          <script>
+
+
+          </script>
+     </div>
+</div>

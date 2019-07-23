@@ -21235,6 +21235,7 @@
 
     .main {
       padding-top: 100px;
+      min-height: 100vh;
     }
 
     .placeholder {
@@ -23576,4 +23577,11 @@ color:red;
     }
     .form .form-control.error {
         border: 1px solid red;
+    }
+.navigation {
+    transition: all ease-in-out .3s;
+}
+    .navigate:hover {
+        cursor: pointer;
+    box-shadow: 0 0 3px rgba(0,0,0,,.7);
     }

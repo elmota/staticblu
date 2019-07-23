@@ -61,3 +61,12 @@ $('.navigate').click(function () {
 
     window.location = page;
 });
+
+
+function loadSucursales() {
+    $.ajax({
+        url: "http://localhost:3000/posts"
+    }).then(function (data) {
+        console.log('DATA', data);
+    });
+}

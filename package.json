@@ -1,0 +1,25 @@
+{
+  "name": "staticblu",
+  "version": "1.0.0",
+  "description": "server",
+  "main": "server.js",
+  "dependencies": {
+    "json-server": "^0.15.0",
+    "node-static": "^0.7.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elmota/staticblu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elmota/staticblu/issues"
+  },
+  "homepage": "https://github.com/elmota/staticblu#readme"
+}

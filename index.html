@@ -18,25 +18,25 @@
   <script type="text/javascript" charset="UTF-8" src="./assets/map.js"></script> -->
 
   <style type="text/css">
-    .gm-style {
-      font: 400 11px Roboto, Arial, sans-serif;
-      text-decoration: none;
-    }
+  .gm-style {
+    font: 400 11px Roboto, Arial, sans-serif;
+    text-decoration: none;
+  }
 
-    .gm-style img {
-      max-width: none;
-    }
-  </style>
-  <!-- <script type="text/javascript" charset="UTF-8" src="./assets/onion.js"></script> -->
-
+  .gm-style img {
+    max-width: none;
+  }
+</style>
+<!-- <script type="text/javascript" charset="UTF-8" src="./assets/onion.js"></script> -->
+<script src="https://kit.fontawesome.com/1ecefce798.js"></script>
 </head>
 
 <body>
   <app-root _nghost-fxl-c0="" ng-version="8.0.1">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"><a class="navbar-brand"><img alt="Bluexpress"
-          class="logo" src="./assets/logo_blue.png"></a><button aria-controls="my-nav" aria-expanded="false"
-        aria-label="Toggle navigation" class="navbar-toggler" data-target="#my-nav" data-toggle="collapse"><span
-          class="navbar-toggler-icon"></span></button>
+      class="logo" src="./assets/logo_blue.png"></a><button aria-controls="my-nav" aria-expanded="false"
+      aria-label="Toggle navigation" class="navbar-toggler" data-target="#my-nav" data-toggle="collapse"><span
+      class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse justify-content-between" id="my-nav">
         <ul class="navbar-nav justify-content-end nav">
           <li></li>
@@ -44,246 +44,206 @@
         <ul class="navbar-nav justify-content-end nav">
           <li class="nav-item"><a class="nav-link" href="#" data-section="#seguimiento">Seguimiento</a></li>
           <li class="nav-item"><a class="nav-link" href="#" data-section="#sucursales">Sucursales <span
-                class="sr-only">(current)</span></a></li>
-          <li class="nav-item"><a class="nav-link" href="#" data-section="#servicios">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link" href="#" data-section="#info">Informacion Cliente</a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#" data-section="#nosotros">Nosotros</a></li>
-          <li class="nav-item"><a class="nav-link" href="#" data-section="#contacto">Contactenos</a></li>
-        </ul>
-      </div>
-    </nav>
-    <app-home class="ng-star-inserted">
-      <div class="container-fluid main" id="seguimiento">
-        <div class="slides">
-          <div class="slide"></div>
+            class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-section="#servicios">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-section="#info">Informacion Cliente</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#" data-section="#nosotros">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-section="#contacto">Contactenos</a></li>
+          </ul>
         </div>
-      </div>
-      <div class="wrapper">
-        <app-sucursales _nghost-fxl-c3="">
-          <div class="container main" id="sucursales">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="center gap fade-down section-heading no-display animated fadeInDown appear">
-                  <h2 class="main-title">Sucursales</h2>
+      </nav>
+      <app-home class="ng-star-inserted">
+        <div class="container-fluid main" id="seguimiento">
+          <div class="slides">
+            <div class="slide"></div>
+          </div>
+        </div>
+        <div class="wrapper">
+          <app-sucursales _nghost-fxl-c3="">
+            <div class="container main" id="sucursales">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="center gap fade-down section-heading no-display animated fadeInDown appear">
+                    <h2 class="main-title">Sucursales</h2>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-md-3">
-                <div class="form-group">
-                  <p-autocomplete placeholder="Ciudad" class="ng-tns-c8-0 ng-untouched ng-pristine ng-valid"
-                    ng-reflect-min-length="1" ng-reflect-placeholder="Ciudad" ng-reflect-dropdown="true"
-                    ng-reflect-suggestions=""><span class="ng-tns-c8-0 ui-autocomplete ui-widget ui-autocomplete-dd"
-                      ng-reflect-ng-class="[object Object]">
-                      <!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><input aria-autocomplete="list" aria-haspopup="true" autocomplete="off" role="combobox"
-                        class="ng-tns-c8-0 ui-inputtext ui-widget ui-state-default ui-corner-all ui-autocomplete-input ng-star-inserted"
-                        ng-reflect-ng-class="ui-inputtext ui-widget ui-stat" type="text" aria-expanded="false"
-                        aria-activedescendant="p-highlighted-option" placeholder="Ciudad">
-                      <!--bindings={}-->
-                      <!--bindings={}-->
-                      <!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><button class="ui-autocomplete-dropdown ng-tns-c8-0 ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ng-star-inserted"
-                        pbutton="" type="button" ng-reflect-icon="pi pi-caret-down"><span aria-hidden="true"
-                          class="ui-button-icon-left ui-clickable pi pi-caret-down"></span><span
-                          class="ui-button-text ui-clickable">ui-btn</span></button>
-                      <!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></span></p-autocomplete>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <select id="regiones" class="form-control">
+                      <option value='null'>Cargando...</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <select id="comunas" class="form-control">
+                      <option value='null'>Cargando...</option>
+                    </select>
+                  </div>
                 </div>
-                <div class="form-group">
-                  <p-autocomplete placeholder="Comuna" class="ng-tns-c8-1 ng-untouched ng-pristine ng-valid"
-                    ng-reflect-min-length="1" ng-reflect-placeholder="Comuna" ng-reflect-dropdown="true"
-                    ng-reflect-suggestions=""><span class="ng-tns-c8-1 ui-autocomplete ui-widget ui-autocomplete-dd"
-                      ng-reflect-ng-class="[object Object]">
-                      <!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><input aria-autocomplete="list" aria-haspopup="true" autocomplete="off" role="combobox"
-                        class="ng-tns-c8-1 ui-inputtext ui-widget ui-state-default ui-corner-all ui-autocomplete-input ng-star-inserted"
-                        ng-reflect-ng-class="ui-inputtext ui-widget ui-stat" type="text" aria-expanded="false"
-                        aria-activedescendant="p-highlighted-option" placeholder="Comuna">
-                      <!--bindings={}-->
-                      <!--bindings={}-->
-                      <!--bindings={
-  "ng-reflect-ng-if": "true"
-}--><button class="ui-autocomplete-dropdown ng-tns-c8-1 ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ng-star-inserted"
-                        pbutton="" type="button" ng-reflect-icon="pi pi-caret-down"><span aria-hidden="true"
-                          class="ui-button-icon-left ui-clickable pi pi-caret-down"></span><span
-                          class="ui-button-text ui-clickable">ui-btn</span></button>
-                      <!--bindings={
-  "ng-reflect-ng-if": "false"
-}--></span></p-autocomplete>
-                </div>
-              </div>
-              <div class="col-md-9">
-                <div class="row">
-                  <div class="col">
-                    <!--bindings={
-  "ng-reflect-ng-if": "true"
-}-->
-                    <h1 class="placeholder ng-star-inserted"><em> Seleccione
+                <div class="col-md-9">
+                  <div class="row">
+                    <div class="col">
+                      <div class="placeholder">
+                        <h1 class="placeholder ng-star-inserted"><em> Seleccione
                         una susucral... </em></h1>
-                    <!--bindings={
-  "ng-reflect-ng-if": "false"
-}-->
 
-                    <button type="button" class="btn btn-primary" onclick="showmodal()">
-                      sucursales
-                    </button>
+<!--                       <button type="button" class="btn btn-primary" onclick="showmodal()">
+                        sucursales
+                      </button>
 
-                    <button type="button" class="btn btn-primary" onclick="loadSucursales()">
-                      sucursales AJAX
-                    </button>
+                      <button type="button" class="btn btn-primary" onclick="loadRegiones()">
+                        sucursales AJAX
+                      </button> -->
+                      </div> 
 
-                    <div id="sucursalesList">
-                      <table>
-                        <thead>
-                          <tr>
-                            <th>Ciudad</th>
-                            <th>Sucursal</th>
-                            <th>Direccion</th>
-                            <th>Telefono</th>
-                            <th></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td rowspan="4">
+                      <div id="sucursalesList">
+                        <table id="sucursalesData" class="table">
+                          <thead>
+                            <tr>
+                              <th>Ciudad</th>
+                              <th>Sucursal</th>
+                              <th>Direccion</th>
+                              <th>Telefono</th>
+                              <th></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+<!--                             <tr>
+                              <td rowspan="4">
                               {{sucursal?.location.state_name}}</td>
-                            <td>{{sucursal?.agency_name}}</td>
-                            <td>{{sucursal?.location.street_name}} {{sucursal?.location.street_number}}</td>
-                            <td>+56 9832 2343</td>
-                            <td class="text-center"><i onclick="loadMap(index)" class="fa fa-marker button"></i> eo
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                              <td>{{sucursal?.agency_name}}</td>
+                              <td>{{sucursal?.location.street_name}} {{sucursal?.location.street_number}}</td>
+                              <td>+56 9832 2343</td>
+                              <td class="text-center"><i onclick="loadMap(index)" class="fa fa-marker button"></i> eo
+                              </td>
+                            </tr> -->
+                          </tbody>
+                        </table>
+                      </div>
 
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <p-dialog class="ng-tns-c9-2" ng-reflect-visible="false" ng-reflect-header="" ng-reflect-modal="true"
+            <p-dialog class="ng-tns-c9-2" ng-reflect-visible="false" ng-reflect-header="" ng-reflect-modal="true"
             ng-reflect-responsive="true" ng-reflect-style="[object Object]">
             <!--bindings={
   "ng-reflect-ng-if": "false"
 }-->
-          </p-dialog>
-        </app-sucursales>
-        <app-servicios _nghost-fxl-c4="">
-          <div class="container main" id="servicios">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="center gap fade-down section-heading no-display animated fadeInDown appear">
-                  <h2 class="main-title">Servicios</h2>
-                  <hr>
-                  <p>Otorgamos un servicio puerta a puerta para distribuir tus productos, ya sean
-                    valijas, sobres o encomiendas a más de 300 ciudades a lo largo de Chile de forma ágil y segura.</p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-3 navigate" data-loc="envios">
-                <a href="servicios/envios.html" class="servicios-box">
-                  <div class="tile-progress tile
-                -red bounce-in no-display animated bounceIn appear">
-                    <div class="tile-header" style="display: block; height: 417px;">
-                      <h4><a>Envíos Nacionales</a></h4><img src="./assets/article"><span
-                        style="text-align: justify;">Transporte y envíos de sobres, valijas y encomiendas a más de 300
-                        ciudades en Chile, con Seguimiento en Línea.</span>
-                    </div>
-                    <div class="tile-progressbar">
-                      <span data-fill="300" style="width: 65.5%;"></span></div>
-                    <div class="tile-footer">
-                      <h4><span class="pct-counter counter">300</span></h4>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 navigate" data-loc="oficinas">
-                <a href="servicios/oficinas.html" class="servicios-box">
-                  <div class="tile-progress tile
-                -cyan bounce-in no-display animated bounceIn appear">
-                    <div class="tile-header" style="display: block; height: 417px;">
-                      <h4><a>Oficinas Comerciales</a></h4><img src="./assets/article(1)"><span>Transporte de
-
-                        envíos a través de nuestras sucursales en todo Chile.</span>
-                    </div>
-
-                    <div class="tile-progressbar">
-                      <span data-fill="24" style="width: 98.5%;"></span></div>
-                    <div class="tile-footer">
-                      <h4><span class="pct-counter counter">24</span></h4>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 navigate" id="courier" data-loc="courier">
-                <a href="servicios/courier.html" class="servicios-box">
-                  <div class="tile-progress tile-primary bounce-in no-display animated bounceIn appear">
-                    <div class="tile-header" style="display: block; height: 417px;">
-                      <h4><a>Courier Internacional</a></h4><img src="./assets/article(2)"><span>Nuestra red de
-
-                        distribución internacional contempla el transporte de sobres y paquetes con cobertura a 220
-                        países.</span>
-                    </div>
-                    <div class="tile-progressbar"><span data-fill="220" style="width: 10%;"></span></div>
-                    <div class="tile-footer">
-                      <h4><span class="pct-counter counter">220</span></h4>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 navigate" data-loc="almacenaje">
-                <a href="servicios/almacenaje.html" class="servicios-box">
-                  <div class="tile-progress tile-pink bounce-in no-display animated bounceIn appear">
-                    <div class="tile-header" style="display: block; height: 417px;">
-                      <h4><a>Almacenaje y Lógistica</a></h4><img src="./assets/article(3)"><span>Servicio de
-                        administración de inventario, mecanizado y distribución.</span>
-                    </div>
-                    <div class="tile-progressbar"><span data-fill="10%" style="width: 10%;"></span></div>
-                    <div class="tile-footer">
-                      <h4><span class="pct-counter counter">10</span></h4>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
+</p-dialog>
+</app-sucursales>
+<app-servicios _nghost-fxl-c4="">
+  <div class="container main" id="servicios">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="center gap fade-down section-heading no-display animated fadeInDown appear">
+          <h2 class="main-title">Servicios</h2>
+          <hr>
+          <p>Otorgamos un servicio puerta a puerta para distribuir tus productos, ya sean
+          valijas, sobres o encomiendas a más de 300 ciudades a lo largo de Chile de forma ágil y segura.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 navigate" data-loc="envios">
+        <a href="servicios/envios.html" class="servicios-box">
+          <div class="tile-progress tile
+          -red bounce-in no-display animated bounceIn appear">
+          <div class="tile-header" style="display: block; height: 417px;">
+            <h4><a>Envíos Nacionales</a></h4><img src="./assets/article"><span
+            style="text-align: justify;">Transporte y envíos de sobres, valijas y encomiendas a más de 300
+          ciudades en Chile, con Seguimiento en Línea.</span>
+        </div>
+        <div class="tile-progressbar">
+          <span data-fill="300" style="width: 65.5%;"></span></div>
+          <div class="tile-footer">
+            <h4><span class="pct-counter counter">300</span></h4>
           </div>
-        </app-servicios>
-        <app-info _nghost-fxl-c5="">
-          <div _ngcontent-fxl-c5="" class="container main" id="info">
-            <div _ngcontent-fxl-c5="" class="row">
-              <div _ngcontent-fxl-c5="" class="col-md-12">
-                <div _ngcontent-fxl-c5=""
-                  class="center gap fade-down section-heading no-display animated fadeInDown appear">
-                  <h2 _ngcontent-fxl-c5="" class="main-title">Información Cliente</h2>
-                </div>
-              </div>
-            </div>
-            <div _ngcontent-fxl-c5="" class="opciones row">
-              <div _ngcontent-fxl-c5="" class="col-md text-center"><a _ngcontent-fxl-c5="" class="active"
-                  ng-reflect-ng-class="[object Object]">Cobertura de Riesgos</a></div>
-              <div _ngcontent-fxl-c5="" class="col-md text-center"><a _ngcontent-fxl-c5=""
-                  ng-reflect-ng-class="[object Object]">Preguntas Frecuentes</a></div>
-              <div _ngcontent-fxl-c5="" class="col-md text-center"><a _ngcontent-fxl-c5=""
-                  ng-reflect-ng-class="[object Object]">Glosario de Términos</a></div>
-              <div _ngcontent-fxl-c5="" class="col-md text-center"><a _ngcontent-fxl-c5=""
-                  ng-reflect-ng-class="[object Object]">Mercancías Peligrosas</a></div>
-              <div _ngcontent-fxl-c5="" class="col-md text-center"><a _ngcontent-fxl-c5=""
-                  ng-reflect-ng-class="[object Object]">Consulte su Boleta</a></div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3 navigate" data-loc="oficinas">
+      <a href="servicios/oficinas.html" class="servicios-box">
+        <div class="tile-progress tile
+        -cyan bounce-in no-display animated bounceIn appear">
+        <div class="tile-header" style="display: block; height: 417px;">
+          <h4><a>Oficinas Comerciales</a></h4><img src="./assets/article(1)"><span>Transporte de
+
+          envíos a través de nuestras sucursales en todo Chile.</span>
+        </div>
+
+        <div class="tile-progressbar">
+          <span data-fill="24" style="width: 98.5%;"></span></div>
+          <div class="tile-footer">
+            <h4><span class="pct-counter counter">24</span></h4>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3 navigate" id="courier" data-loc="courier">
+      <a href="servicios/courier.html" class="servicios-box">
+        <div class="tile-progress tile-primary bounce-in no-display animated bounceIn appear">
+          <div class="tile-header" style="display: block; height: 417px;">
+            <h4><a>Courier Internacional</a></h4><img src="./assets/article(2)"><span>Nuestra red de
+
+              distribución internacional contempla el transporte de sobres y paquetes con cobertura a 220
+            países.</span>
+          </div>
+          <div class="tile-progressbar"><span data-fill="220" style="width: 10%;"></span></div>
+          <div class="tile-footer">
+            <h4><span class="pct-counter counter">220</span></h4>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3 navigate" data-loc="almacenaje">
+      <a href="servicios/almacenaje.html" class="servicios-box">
+        <div class="tile-progress tile-pink bounce-in no-display animated bounceIn appear">
+          <div class="tile-header" style="display: block; height: 417px;">
+            <h4><a>Almacenaje y Lógistica</a></h4><img src="./assets/article(3)"><span>Servicio de
+            administración de inventario, mecanizado y distribución.</span>
+          </div>
+          <div class="tile-progressbar"><span data-fill="10%" style="width: 10%;"></span></div>
+          <div class="tile-footer">
+            <h4><span class="pct-counter counter">10</span></h4>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+</app-servicios>
+<app-info _nghost-fxl-c5="">
+  <div _ngcontent-fxl-c5="" class="container main" id="info">
+    <div _ngcontent-fxl-c5="" class="row">
+      <div _ngcontent-fxl-c5="" class="col-md-12">
+        <div _ngcontent-fxl-c5=""
+        class="center gap fade-down section-heading no-display animated fadeInDown appear">
+        <h2 _ngcontent-fxl-c5="" class="main-title">Información Cliente</h2>
+      </div>
+    </div>
+  </div>
+  <div _ngcontent-fxl-c5="" class="opciones row">
+    <div _ngcontent-fxl-c5="" class="col-md text-center"><a _ngcontent-fxl-c5="" class="active"
+      ng-reflect-ng-class="[object Object]">Cobertura de Riesgos</a></div>
+      <div _ngcontent-fxl-c5="" class="col-md text-center"><a _ngcontent-fxl-c5=""
+        ng-reflect-ng-class="[object Object]">Preguntas Frecuentes</a></div>
+        <div _ngcontent-fxl-c5="" class="col-md text-center"><a _ngcontent-fxl-c5=""
+          ng-reflect-ng-class="[object Object]">Glosario de Términos</a></div>
+          <div _ngcontent-fxl-c5="" class="col-md text-center"><a _ngcontent-fxl-c5=""
+            ng-reflect-ng-class="[object Object]">Mercancías Peligrosas</a></div>
+            <div _ngcontent-fxl-c5="" class="col-md text-center"><a _ngcontent-fxl-c5=""
+              ng-reflect-ng-class="[object Object]">Consulte su Boleta</a></div>
             </div>
             <!--bindings={
   "ng-reflect-ng-if": "true"
 }-->
-            <div _ngcontent-fxl-c5="" class="tabContent ng-star-inserted" id="section1">
-              <p _ngcontent-fxl-c5=""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, labore? </p>
-            </div>
+<div _ngcontent-fxl-c5="" class="tabContent ng-star-inserted" id="section1">
+  <p _ngcontent-fxl-c5=""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, labore? </p>
+</div>
             <!--bindings={
   "ng-reflect-ng-if": "false"
 }-->
@@ -296,164 +256,169 @@
             <!--bindings={
   "ng-reflect-ng-if": "false"
 }-->
-            <div _ngcontent-fxl-c5="" class="row"></div>
-          </div>
-        </app-info>
-        <app-nosotros _nghost-fxl-c6="">
-          <div _ngcontent-fxl-c6="" class="container main" id="nosotros">
-            <div _ngcontent-fxl-c6="" class="row">
-              <div _ngcontent-fxl-c6="" class="col-md-12">
-                <div _ngcontent-fxl-c6=""
-                  class="center gap fade-down section-heading no-display animated fadeInDown appear">
-                  <h2 _ngcontent-fxl-c6="" class="main-title">Acerca de Nosotros</h2>
-                  <p _ngcontent-fxl-c6="" style="color: #409ad5;">Reseña Historica</p>
-                </div>
-              </div>
-            </div>
-            <div _ngcontent-fxl-c6="" class="row">
-              <div _ngcontent-fxl-c6="" class="col-md-10 col-md-offset-1 fade-up no-display animated fadeInUp appear">
-                <p _ngcontent-fxl-c6="">Lan Airlines creó en 1996 su filial Lan Courier, empresa que se inició como
-                  courier a nivel local y que ya en el segundo trimestre de 1998 extendió sus servicios a los de
-                  operación logística especializándose en distribución, con una red de oficinas, bodegas, camiones y
-                  camionetas a lo largo de todo Chile. En el año 2001, Lan Courier inicia operaciones de almacenaje y
-                  administración de inventarios inaugurando un Centro de Distribución de 5.500 m2 de superficie, con los
-                  más altos estándares de seguridad y tecnología.</p>
-                <hr _ngcontent-fxl-c6="">
-                <h4 _ngcontent-fxl-c6="" style="color: #409ad5;">Misión y Visión</h4>
-                <p _ngcontent-fxl-c6="">Nuestra Misión es proveer soluciones innovadoras, que aporten competitividad al
-                  negocio de nuestros clientes, sustentados en procesos flexibles y eficientes, tecnología de
-                  información oportuna y un equipo humano altamente preparado. Nuestra Visión, queremos ser la mejor
-                  empresa de soluciones de distribución logística en Chile, en venta, cobertura, volumen, en calidad de
-                  servicio y eficiencia. Para seguir creciendo, queremos desarrollar nuestra propia identidad, que
-                  refleje nuestro espíritu, nuestros valores y nuestro desafío..</p>
-              </div>
-            </div>
-            <div _ngcontent-fxl-c6="" class="row fade-up no-display animated fadeInUp appear">
-              <div _ngcontent-fxl-c6="" class="col-md-6">
-                <div _ngcontent-fxl-c6="" class="tile-progress tile-red bounce-in no-display animated bounceIn appear"
-                  style="height: 160px!important;">
-                  <div _ngcontent-fxl-c6="" class="tile-header" style="display: block; min-height: 194px;">
-                    <h4 _ngcontent-fxl-c6="" style="color: #409ad5;"><a _ngcontent-fxl-c6=""
-                        href="http://localhost:4200/nosotros/valores"
-                        ng-reflect-router-link="/nosotros/valores">Valores</a></h4><img _ngcontent-fxl-c6=""
-                      height="100px;" src="./assets/article"><span _ngcontent-fxl-c6=""
-                      style="text-align: justify;">Calidad, Confiabilidad, Integridad...</span>
-                  </div>
-                </div>
-                <div _ngcontent-fxl-c6="" class="tile-progress tile-red bounce-in no-display animated bounceIn appear"
-                  style="height: 160px!important;">
-                  <div _ngcontent-fxl-c6="" class="tile-header" style="display: block; height: 220px;">
-                    <h4 _ngcontent-fxl-c6="" style="color: #409ad5;"><a _ngcontent-fxl-c6=""
-                        href="http://localhost:4200/nosotros/tecnologia"
-                        ng-reflect-router-link="/nosotros/tecnologia">Nuestra Tecnología</a></h4><img
-                      _ngcontent-fxl-c6="" height="100px;" src="./assets/article"><span _ngcontent-fxl-c6=""
-                      style="text-align: justify;">Nuestra tecnología está en constante...</span>
-                  </div>
-                </div>
-              </div>
-              <div _ngcontent-fxl-c6="" class="col-md-6">
-                <div _ngcontent-fxl-c6="" class="tile-progress tile-red bounce-in no-display animated bounceIn appear"
-                  style="height: 160px!important;">
-                  <div _ngcontent-fxl-c6="" class="tile-header" style="display: block; min-height: 194px;">
-                    <h4 _ngcontent-fxl-c6="" style="color: #409ad5;"><a _ngcontent-fxl-c6=""
-                        href="http://localhost:4200/nosotros/integracion"
-                        ng-reflect-router-link="/nosotros/integracion">Integración Web Services</a></h4><img
-                      _ngcontent-fxl-c6="" height="100px;" src="./assets/article"><span _ngcontent-fxl-c6=""
-                      style="text-align: justify;">Blue Express tiene disponible para...</span>
-                  </div>
-                </div>
-                <div _ngcontent-fxl-c6="" class="tile-progress tile-red bounce-in no-display animated bounceIn appear"
-                  style="height: 160px!important;">
-                  <div _ngcontent-fxl-c6="" class="tile-header" style="display: block; height: 220px;">
-                    <h4 _ngcontent-fxl-c6="" style="color: #409ad5;"><a _ngcontent-fxl-c6=""
-                        href="http://localhost:4200/nosotros/politica"
-                        ng-reflect-router-link="/nosotros/politica">Política Integrada</a></h4><img _ngcontent-fxl-c6=""
-                      height="100px;" src="./assets/article"><span _ngcontent-fxl-c6=""
-                      style="text-align: justify;">Empresa Blue Express, es una empres...</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </app-nosotros>
+<div _ngcontent-fxl-c5="" class="row"></div>
+</div>
+</app-info>
+<app-nosotros _nghost-fxl-c6="">
+  <div _ngcontent-fxl-c6="" class="container main" id="nosotros">
+    <div _ngcontent-fxl-c6="" class="row">
+      <div _ngcontent-fxl-c6="" class="col-md-12">
+        <div _ngcontent-fxl-c6=""
+        class="center gap fade-down section-heading no-display animated fadeInDown appear">
+        <h2 _ngcontent-fxl-c6="" class="main-title">Acerca de Nosotros</h2>
+        <p _ngcontent-fxl-c6="" style="color: #409ad5;">Reseña Historica</p>
+      </div>
+    </div>
+  </div>
+  <div _ngcontent-fxl-c6="" class="row">
+    <div _ngcontent-fxl-c6="" class="col-md-10 col-md-offset-1 fade-up no-display animated fadeInUp appear">
+      <p _ngcontent-fxl-c6="">Lan Airlines creó en 1996 su filial Lan Courier, empresa que se inició como
+        courier a nivel local y que ya en el segundo trimestre de 1998 extendió sus servicios a los de
+        operación logística especializándose en distribución, con una red de oficinas, bodegas, camiones y
+        camionetas a lo largo de todo Chile. En el año 2001, Lan Courier inicia operaciones de almacenaje y
+        administración de inventarios inaugurando un Centro de Distribución de 5.500 m2 de superficie, con los
+      más altos estándares de seguridad y tecnología.</p>
+      <hr _ngcontent-fxl-c6="">
+      <h4 _ngcontent-fxl-c6="" style="color: #409ad5;">Misión y Visión</h4>
+      <p _ngcontent-fxl-c6="">Nuestra Misión es proveer soluciones innovadoras, que aporten competitividad al
+        negocio de nuestros clientes, sustentados en procesos flexibles y eficientes, tecnología de
+        información oportuna y un equipo humano altamente preparado. Nuestra Visión, queremos ser la mejor
+        empresa de soluciones de distribución logística en Chile, en venta, cobertura, volumen, en calidad de
+        servicio y eficiencia. Para seguir creciendo, queremos desarrollar nuestra propia identidad, que
+      refleje nuestro espíritu, nuestros valores y nuestro desafío..</p>
+    </div>
+  </div>
+  <div _ngcontent-fxl-c6="" class="row fade-up no-display animated fadeInUp appear">
+    <div _ngcontent-fxl-c6="" class="col-md-6">
+      <div _ngcontent-fxl-c6="" class="tile-progress tile-red bounce-in no-display animated bounceIn appear"
+      style="height: 160px!important;">
+      <div _ngcontent-fxl-c6="" class="tile-header" style="display: block; min-height: 194px;">
+        <h4 _ngcontent-fxl-c6="" style="color: #409ad5;"><a _ngcontent-fxl-c6=""
+          href="http://localhost:4200/nosotros/valores"
+          ng-reflect-router-link="/nosotros/valores">Valores</a></h4><img _ngcontent-fxl-c6=""
+          height="100px;" src="./assets/article"><span _ngcontent-fxl-c6=""
+          style="text-align: justify;">Calidad, Confiabilidad, Integridad...</span>
+        </div>
+      </div>
+      <div _ngcontent-fxl-c6="" class="tile-progress tile-red bounce-in no-display animated bounceIn appear"
+      style="height: 160px!important;">
+      <div _ngcontent-fxl-c6="" class="tile-header" style="display: block; height: 220px;">
+        <h4 _ngcontent-fxl-c6="" style="color: #409ad5;"><a _ngcontent-fxl-c6=""
+          href="http://localhost:4200/nosotros/tecnologia"
+          ng-reflect-router-link="/nosotros/tecnologia">Nuestra Tecnología</a></h4><img
+          _ngcontent-fxl-c6="" height="100px;" src="./assets/article"><span _ngcontent-fxl-c6=""
+          style="text-align: justify;">Nuestra tecnología está en constante...</span>
+        </div>
+      </div>
+    </div>
+    <div _ngcontent-fxl-c6="" class="col-md-6">
+      <div _ngcontent-fxl-c6="" class="tile-progress tile-red bounce-in no-display animated bounceIn appear"
+      style="height: 160px!important;">
+      <div _ngcontent-fxl-c6="" class="tile-header" style="display: block; min-height: 194px;">
+        <h4 _ngcontent-fxl-c6="" style="color: #409ad5;"><a _ngcontent-fxl-c6=""
+          href="http://localhost:4200/nosotros/integracion"
+          ng-reflect-router-link="/nosotros/integracion">Integración Web Services</a></h4><img
+          _ngcontent-fxl-c6="" height="100px;" src="./assets/article"><span _ngcontent-fxl-c6=""
+          style="text-align: justify;">Blue Express tiene disponible para...</span>
+        </div>
+      </div>
+      <div _ngcontent-fxl-c6="" class="tile-progress tile-red bounce-in no-display animated bounceIn appear"
+      style="height: 160px!important;">
+      <div _ngcontent-fxl-c6="" class="tile-header" style="display: block; height: 220px;">
+        <h4 _ngcontent-fxl-c6="" style="color: #409ad5;"><a _ngcontent-fxl-c6=""
+          href="http://localhost:4200/nosotros/politica"
+          ng-reflect-router-link="/nosotros/politica">Política Integrada</a></h4><img _ngcontent-fxl-c6=""
+          height="100px;" src="./assets/article"><span _ngcontent-fxl-c6=""
+          style="text-align: justify;">Empresa Blue Express, es una empres...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</app-nosotros>
 
-        <div class="container-fluid main" id="contacto">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="center gap fade-down section-heading no-display animated fadeInDown appear">
-                <h2 class="main-title">Contactenos</h2>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3">
-              <div class="row menu">
-                <div class="col-md-12">
-                  <ul class="list-group" id="form-nav">
-                    <a class="list-group-item list-group-item-action" href="#" data-form="ejecutivos">Solicitud de
-                      Ejecutivo</a>
-                    <a class="list-group-item list-group-item-action" href="#" data-form="servicio">Inquietudes por
-                      Servicio</a>
-                    <a class="list-group-item list-group-item-action" href="#" data-form="cobertura">Consulta de
-                      Cobertura</a>
-                    <a class="list-group-item list-group-item-action" href="#" data-form="materiales">Solicitud de
-                      Materiales</a>
-                    <a class="list-group-item list-group-item-action" href="#" data-form="trabaje">Trabaje en
-                      BluExpress</a></ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div id="forms">
-
-              </div>
-            </div>
+<div class="container-fluid main" id="contacto">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="center gap fade-down section-heading no-display animated fadeInDown appear">
+        <h2 class="main-title">Contactenos</h2>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="row menu">
+        <div class="col-md-12">
+          <ul class="list-group" id="form-nav">
+            <a class="list-group-item list-group-item-action" href="#" data-form="ejecutivos">Solicitud de
+            Ejecutivo</a>
+            <a class="list-group-item list-group-item-action" href="#" data-form="servicio">Inquietudes por
+            Servicio</a>
+            <a class="list-group-item list-group-item-action" href="#" data-form="cobertura">Consulta de
+            Cobertura</a>
+            <a class="list-group-item list-group-item-action" href="#" data-form="materiales">Solicitud de
+            Materiales</a>
+            <a class="list-group-item list-group-item-action" href="#" data-form="trabaje">Trabaje en
+            BluExpress</a></ul>
           </div>
         </div>
-
       </div>
-    </app-home>
-  </app-root>
-  <!--  -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-  <script type="text/javascript" src="assets/javascript/bootstrap.js"></script>
-  <script type="text/javascript" src="assets/javascript/scripts.js"></script>
-  <script type="text/javascript" src="assets/javascript/backstretch.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/additional-methods.min.js"></script>
+      <div class="col-md-8">
+        <div id="forms">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</app-home>
+</app-root>
+<!--  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="assets/javascript/bootstrap.js"></script>
+<script type="text/javascript" src="assets/javascript/scripts.js"></script>
+<script type="text/javascript" src="assets/javascript/backstretch.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/additional-methods.min.js"></script>
 
 
-  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-  <script type="text/javascript" src="./assets/javascript/gmaps.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="./assets/javascript/gmaps.min.js"></script>
 
-  <script type="text/javascript">
-    $(document).ready(function ($) {
-      'use strict';
-      $('body').backstretch([
-        "http://ecmetrics.com/es/wp-content/uploads/2016/01/avion-volando.jpg",
-        "images/courier.jpeg",
-        "http://www.bluex.cl/image/journal/article?img_id=162510&t=1468881427385",
-        "images/logistica.jpeg",
-        "images/oficinas.jpeg"
+<script type="text/javascript">
+  $(document).ready(function ($) {
+    'use strict';
+    $('body').backstretch([
+      "http://ecmetrics.com/es/wp-content/uploads/2016/01/avion-volando.jpg",
+      "images/courier.jpeg",
+      "http://www.bluex.cl/image/journal/article?img_id=162510&t=1468881427385",
+      "images/logistica.jpeg",
+      "images/oficinas.jpeg"
       ], { duration: 5000, fade: 500, centeredY: true });
 
-      setTimeout(() => {
-        $('#contacto [data-form=ejecutivos]').trigger('click');
-      }, 500);
+    setTimeout(() => {
+      $('#contacto [data-form=ejecutivos]').trigger('click');
+    }, 500);
 
-    });
 
-    $('#sucursalesModal').on('shown.bs.modal', function (event) {
-      console.log('modal lanchud');
-      launchMap();
-    })
+    //load regiones
+    loadRegiones();
+    loadComuna();
 
-    $('#sucursalesModal').on('hidden.bs.modal', function (e) {
+  });
+
+  $('#sucursalesModal').on('shown.bs.modal', function (event) {
+    console.log('modal lanchud');
+    launchMap();
+  })
+
+  $('#sucursalesModal').on('hidden.bs.modal', function (e) {
       // do something...
     })
 
-    function launchMap() {
-      var map, lat, lng;
+  function launchMap() {
+    var map, lat, lng;
       //creamos el mapa
       var map = new GMaps({
         el: '#map',
@@ -480,7 +445,7 @@
     }
 
     function showmodal() {
-      $('#sucursalesModal').modal('show')
+      $('#sucursalesModal').modal('show');
       launchMap();
     }
 
@@ -488,7 +453,7 @@
 
   <div style="position: absolute; left: 0px; top: -2px; height: 1px; overflow: hidden; visibility: hidden; width: 1px;">
     <span
-      style="position: absolute; font-size: 300px; width: auto; height: auto; margin: 0px; padding: 0px; font-family: Roboto, Arial, sans-serif;">BESbswy</span>
+    style="position: absolute; font-size: 300px; width: auto; height: auto; margin: 0px; padding: 0px; font-family: Roboto, Arial, sans-serif;">BESbswy</span>
   </div>
 
   <div class="modal fade" id="sucursalesModal" tabindex="-1" role="dialog">
@@ -502,6 +467,41 @@
         </div>
         <div class="modal-body">
           <div id="map"></div>
+
+          <div class="datos">
+<!--             <p>
+              <strong>Direccion:</strong> <span>{{sucursal?.location.street_name}}</span> <span>{{sucursal?.location.street_number}}</span>
+            </p>
+            <p>
+              <strong>Telefonos:</strong> <a href="">+56 7346 3736</a>, <a href="">+56 7346 3736</a>
+            </p>
+            <p>
+              <strong>Horarios de atencion:</strong>
+            </p>
+            <ul class="sucursales">
+              <li>
+                Lunes
+                <span>De {{sucursal?.open_hours.monday[0].from}} a {{sucursal?.open_hours.monday[0].to}}</span>,
+              </li>
+              <li>
+                Martes
+                <span>De {{sucursal?.open_hours.monday[0].from}} a {{sucursal?.open_hours.monday[0].to}}</span>,
+              </li>
+              <li>
+                Miercoles
+                <span>De {{sucursal?.open_hours.monday[0].from}} a {{sucursal?.open_hours.monday[0].to}}</span>,
+              </li>
+              <li>
+                Jueves
+                <span>De {{sucursal?.open_hours.monday[0].from}} a {{sucursal?.open_hours.monday[0].to}}</span>,
+              </li>
+              <li>
+                Viernes
+                <span>De {{sucursal?.open_hours.monday[0].from}} a {{sucursal?.open_hours.monday[0].to}}</span>,
+              </li>
+            </ul> -->
+          </div>
+
         </div>
       </div>
     </div>

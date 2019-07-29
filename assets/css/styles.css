@@ -23603,3 +23603,7 @@ color:red;
       .maploader {
         cursor: pointer;
       }
+
+      .almacenaje_box img {
+      max-width: 90px;
+      }
